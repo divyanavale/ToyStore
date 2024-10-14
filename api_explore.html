@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search API Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tiny Treasures - Baby Toys for Every Stage</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourProducts.html">Our Products</a></li>
+                <li><a href="addProduct.html">Add Product</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="api_explore.html">Explore API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="searchForm">
+            <form id="searchForm" onsubmit="handleSubmitForSearch(event)">
+                <input type="text" id="searchQuery" placeholder="Search" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <div id="searchResultsContainer"></div>
+    </main>
+
+</body>
+
+</html>

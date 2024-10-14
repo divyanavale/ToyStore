@@ -1,0 +1,208 @@
+body {
+  font-family: "Georgia", serif;
+  color: #4a5759;
+  background-color: #dedbd2;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #4a5759;
+  color: #f7e1d7;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 0.75rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #333c3d;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.card-container .card {
+  background-color: #4a5759;
+  border: 1px solid #edafb8;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+.card-container .card:hover {
+  transform: scale(1.05);
+}
+.card-container .card strong {
+  font-size: 1.3em;
+  color: #b0c4b1;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card-container .card p, .card-container .card figcaption {
+  color: #dedbd2;
+  font-size: 1em;
+  margin: 0;
+}
+
+.contactForm,
+.addProductForm,
+.searchForm {
+  background-color: #4a5759;
+  border: 1px solid #dedbd2;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #dedbd2;
+}
+.contactForm h2,
+.contactForm p,
+.addProductForm h2,
+.addProductForm p,
+.searchForm h2,
+.searchForm p {
+  color: #dedbd2;
+}
+.contactForm label,
+.addProductForm label,
+.searchForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contactForm input,
+.contactForm textarea,
+.contactForm select,
+.addProductForm input,
+.addProductForm textarea,
+.addProductForm select,
+.searchForm input,
+.searchForm textarea,
+.searchForm select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dedbd2;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.contactForm select,
+.addProductForm select,
+.searchForm select {
+  width: 95%;
+}
+
+button {
+  background-color: #dedbd2;
+  color: #4a5759;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+button:hover {
+  background-color: #b0c4b1;
+  transform: scale(1.05);
+}
+
+.fetchSearchResultsBtn {
+  margin: 20px;
+  background-color: #4a5759;
+  color: #dedbd2;
+}
+
+#successMessage {
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(113, 193, 113);
+}
+
+section {
+  padding: 20px;
+}
+section h3 {
+  color: #4a5759;
+  margin: 20px 0;
+  text-align: center;
+}
+section .category {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .category .product {
+  background-color: #4a5759;
+  border: 1px solid #dedbd2;
+  border-radius: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  min-width: 200px;
+}
+section .category .product:hover {
+  transform: scale(1.05);
+}
+section .category .product figure {
+  margin: 0;
+  text-align: center;
+}
+section .category .product .product-title {
+  font-weight: bold;
+  color: #dedbd2;
+  margin: 10px 0;
+}
+section .category .product .product-price {
+  color: #b0c4b1;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}/*# sourceMappingURL=styles.css.map */
